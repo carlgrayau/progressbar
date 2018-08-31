@@ -1,5 +1,5 @@
 require 'ruby-progressbar'
-require 'faker'
+require 'rainbow'
 
 
 def screen_space
@@ -14,7 +14,7 @@ system'clear'
 
 screen_space
 
-puts "How do you feel about 'self'?" 
+puts Rainbow("                                          How do you feel about 'self'?").skyblue
 sleep(3)
 system'clear'
 screen_space
@@ -22,7 +22,7 @@ dec = 15.times { pro_bar.decrement; sleep 0.2 }
 puts ''
 system'clear'
 screen_space
-puts "And moving on from 'self'"
+puts Rainbow("                                          And moving on from 'self'").skyblue
 sleep(3)
 system'clear'
 screen_space
@@ -31,8 +31,9 @@ puts ''
 
 system'clear'
 screen_space
-puts 'you never move on from self'
+puts Rainbow('                                          you never move on from self').skyblue
 sleep(4)
 system'clear'
 screen_space
 dec = 70.times { pro_bar.decrement; sleep 0.05 }
+system'clear'
